@@ -1,0 +1,165 @@
+body
+{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15pt;
+    margin:0;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.red{
+    border: 3px solid rgb(255, 0, 0);
+}
+#top{
+    min-width: 100%;
+}
+#slider{
+    min-width: 100%;
+}
+.content{
+    color: #c5c6c8;
+    text-align: center;
+    background-color: #201e1c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    max-height: 65vh;
+    min-width: auto;
+}
+.owl-carousel .item {
+    background: #ff3f4d;
+}
+.owl-carousel h2 {
+    color: #FFF;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+footer {
+    min-width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #201e1c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+ }
+
+    footer .box{
+     width: 30%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-left: 2.2%;
+     color: #797878;
+     font-size: 15pt;
+}
+    footer .box p{
+    font-size: 13pt;
+}
+footer .fa {
+    width: 50px;
+}
+.fa {
+        color: #797878;
+        font-size: 30px!important;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 2px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #c5c6c8;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #c5c6c8;
+}
+
+.searchButton {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #c5c6c8;
+  background: #c5c6c8;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.wrap{
+  width: 10%;
+}
+main{
+    margin-top: 20px;
+    width: 100%;
+}
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.textContent{
+    display: block;
+    float: right;
+    width: 70%;
+    margin: 5px;
+}
+.article img{
+    max-width: 20%;
+}
+
+.article h1{
+    font-size: 25px;
+}
+
+.article p{
+    font-size: 20px;
+}
+.article a{
+    float: right;
+}
+
+ @media screen and (max-width: 768px) {
+footer .box{
+    width: 100%;
+}
+.spec{
+order: 3;
+}
+.wrap{
+    width: 90%;
+  }
+  .textContent{
+    display: block;
+    float: right;
+    width: 100%;
+    margin: 5px;
+}
+.article img{
+    max-width: 70%;
+}
+}
