@@ -9,3 +9,11 @@ $(document).ready(function() {
       autoPlayTimeout: 5000,
     });
   });
+  function rollOut() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
