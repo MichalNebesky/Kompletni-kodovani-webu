@@ -19,7 +19,7 @@ body
 }
 header{
     min-width: 100%;
-    position: sticky; 
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -28,6 +28,19 @@ header{
 }
 #slider{
     min-width: 100%;
+}
+
+.popup-gallery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+}
+.popup-gallery img{
+  max-width: 325px;
+  min-width: 325px;
+  margin-top: 25px;
 }
 .content{
     color: #dab446;
@@ -168,7 +181,7 @@ main{
     background-color: #201e1c;
     padding-top: 5px;
   }
-  
+
   .topnav a {
     display: block;
     color: #f2f2f2;
@@ -179,17 +192,17 @@ main{
     z-index: 100;
     float: left;
   }
-  
+
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   .topnav a.active {
     background-color: #009140;
     color: white;
   }
-  
+
   .topnav .icon {
     display: none;
   }
@@ -197,6 +210,59 @@ main{
   .topnav .spec{
       float: right;
   }
+.formular{
+  width: 100%;
+  margin-top: 25px;
+}
+  .formular input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.formular label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.formular input[type=submit] {
+  background-color: #009140;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.formular input[type=submit]:hover {
+  background-color: #45a049;
+}
+.formular .container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
  @media screen and (max-width: 768px) {
 footer .box{
     width: 100%;
@@ -232,4 +298,8 @@ order: 3;
   display: block;
   text-align: left;
 }
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
